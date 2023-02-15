@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
     }
 
     public static void task1 () {
@@ -18,6 +19,32 @@ public class Main {
         System.out.println(d);
         System.out.println(e);
         System.out.println(f);
+    }
+
+    /*27.12
+987 678 965 549
+2,786
+569
+-159
+27897
+67*/
+    public static void task2 () {
+        System.out.println("Задача 2");
+        //задача 2
+        float num_1 = 27.12f;
+        long num_2 = 987_678_965_549L;
+        float num_3 = 2.786f;
+        int num_4 = 569;
+        short num_5 = -159;
+        int num_6 = 27_897;
+        short num_7 = 67;
+        System.out.println(num_1);
+        System.out.println(num_2);
+        System.out.println(num_3);
+        System.out.println(num_4);
+        System.out.println(num_5);
+        System.out.println(num_6);
+        System.out.println(num_7);
     }
 
 }
