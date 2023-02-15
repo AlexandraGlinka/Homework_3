@@ -56,7 +56,7 @@ public class Main {
         short paper = 480;
         int totalCount = lyudPav + anSerg + ekAnd;
         int paperForOne = paper /totalCount;
-        System.out.println(paperForOne);
+        System.out.println("На каждого ученика рассчитано " + paperForOne + " листов бумаги");
     }
 
 }
