@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1 () {
@@ -45,6 +46,17 @@ public class Main {
         System.out.println(num_5);
         System.out.println(num_6);
         System.out.println(num_7);
+    }
+    public static void task3() {
+        System.out.println("Задача 3");
+        //задача 3
+        short lyudPav = 23;
+        short anSerg = 27;
+        short ekAnd = 30;
+        short paper = 480;
+        int totalCount = lyudPav + anSerg + ekAnd;
+        int paperForOne = paper /totalCount;
+        System.out.println(paperForOne);
     }
 
 }
