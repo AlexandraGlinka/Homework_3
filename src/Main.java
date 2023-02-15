@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -57,6 +58,21 @@ public class Main {
         int totalCount = lyudPav + anSerg + ekAnd;
         int paperForOne = paper /totalCount;
         System.out.println("На каждого ученика рассчитано " + paperForOne + " листов бумаги");
+    }
+    public static void task4() {
+        System.out.println("Задача 4");
+        //задача 4
+        short capacity_2min = 16;
+        int capacity_1min = capacity_2min / 2;
+        int capacity_20min = capacity_1min * 20; //за 20 минут,
+        int day = 24 * 60;
+        int capacityForDay = capacity_1min * day; // в сутки,
+        int capacity_3day = capacityForDay * 3; // за 3 дня,
+        int capacityForMonth = capacityForDay * 30; // за 1 месяц
+        System.out.println("За 20 минут машина произвела " + capacity_20min + " штук бутылок");
+        System.out.println("За сутки машина произвела " + capacityForDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + capacity_3day + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + capacityForMonth + " штук бутылок");
     }
 
 }
