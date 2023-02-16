@@ -100,7 +100,7 @@ public class Main {
         int eggsTotalWeight = eggsWeight * eggsCount;
         int breakfastTotalWeight = bananasTotalWeight + milkTotalWeight + iceCreamTotalWeight + eggsTotalWeight;
         System.out.print("Общий вес спортзавтрака " + breakfastTotalWeight + " г");
-        System.out.println(" ли " + breakfastTotalWeight / 1000f + " кг");
+        System.out.println(" или " + breakfastTotalWeight / 1000f + " кг");
     }
     public static void task7() {
         System.out.println("Задача 7");
