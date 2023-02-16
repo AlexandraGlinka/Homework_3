@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1 () {
@@ -24,14 +25,6 @@ public class Main {
         System.out.println(e);
         System.out.println(f);
     }
-
-    /*27.12
-987 678 965 549
-2,786
-569
--159
-27897
-67*/
     public static void task2 () {
         System.out.println("Задача 2");
         //задача 2
@@ -107,6 +100,21 @@ public class Main {
         int breakfastTotalWeight = bananasTotalWeight + milkTotalWeight + iceCreamTotalWeight + eggsTotalWeight;
         System.out.print("Общий вес спортзавтрака " + breakfastTotalWeight + " г");
         System.out.println(" ли " + breakfastTotalWeight / 1000f + " кг");
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        //задача 7
+        int sportsmenWeight = 7;
+        int lossWeightForDayMin = 250;
+        int lossWeightForDayMax = 500;
+        int daysForLossWeightMax = sportsmenWeight * 1000 / lossWeightForDayMin;
+        int daysForLossWeightMin = sportsmenWeight * 1000 / lossWeightForDayMax;
+        System.out.println("Если спортсмен будет худеть на " + lossWeightForDayMin +
+                " г в день, то на " + sportsmenWeight + " кг он похудеет за " + daysForLossWeightMax + " дней");
+        System.out.println("Если спортсмен будет худеть на " + lossWeightForDayMax +
+                " г в день, то на " + sportsmenWeight + " кг он похудеет за " + daysForLossWeightMin + " дней");
+        int daysForLossWeightAvg = (daysForLossWeightMax + daysForLossWeightMin) / 2;
+        System.out.println("В среднем спортсмен похудеет за " + daysForLossWeightAvg + " день");
     }
 
 }
