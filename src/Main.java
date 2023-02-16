@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -115,6 +116,32 @@ public class Main {
                 " г в день, то на " + sportsmenWeight + " кг он похудеет за " + daysForLossWeightMin + " дней");
         int daysForLossWeightAvg = (daysForLossWeightMax + daysForLossWeightMin) / 2;
         System.out.println("В среднем спортсмен похудеет за " + daysForLossWeightAvg + " день");
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        //задача 8
+        /*Маша получает 67 760 рублей в месяц.
+Денис получает 83 690 рублей в месяц.
+Кристина получает 76 230 рублей в месяц.
+Маша теперь получает ... рублей. Годовой доход вырос на ... рублей
+         */
+        int salaryMashaOld = 57_760;
+        int salaryDenisOld = 83_690;
+        int salaryChrisOld = 76_230;
+        int salaryUpPercent = 10;
+        float salaryUpIndex = 1 + (salaryUpPercent / 100f);
+        float salaryMashaNew = salaryMashaOld * salaryUpIndex;
+        float salaryDenisNew = salaryDenisOld * salaryUpIndex;
+        float salaryChrisNew = salaryChrisOld * salaryUpIndex;
+        float salaryMashaDiff = salaryMashaNew - salaryMashaOld;
+        float salaryDenisDiff = salaryDenisNew - salaryDenisOld;
+        float salaryChrisDiff = salaryChrisNew - salaryChrisOld;
+        System.out.println("Маша теперь получает " + salaryMashaNew + " рублей. Годовой доход вырос на "
+                + salaryMashaDiff + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisNew + " рублей. Годовой доход вырос на "
+                + salaryDenisDiff + " рублей");
+        System.out.println("Кристина теперь получает " + salaryChrisNew + " рублей. Годовой доход вырос на "
+                + salaryChrisDiff + " рублей");
     }
 
 }
